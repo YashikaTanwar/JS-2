@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <p id="German2"></p>
+
+    <p id="Mexican"></p>
+
+    <script>
+
+        class Student {
+
+            constructor(name, year) {
+
+                this.name = name;
+
+                this.year = year;
+
+            }
+
+
+            present() {
+
+                let date = new Date();
+
+                return date.getFullYear() - this.year;
+
+            }
+
+
+        }
+
+
+        let Mexican = new Student("Vivek Prakash", 1985);
+
+        document.getElementById("Mexican").innerHTML = "My name is " + Mexican.name + "I was born on " + Mexican.year;
+
+        let German2 = new Student("Yashika", 2002);
+
+        document.getElementById("German2").innerHTML = "My name is " + German2.name + "I was born on " + German2.year;
+
+
+    </script>
+
+</body>
+
+</html>

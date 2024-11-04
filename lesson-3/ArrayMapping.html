@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Mapping</title>
+</head>
+
+<body>
+    <p>Multiply every element in an array with 10.</p>
+    <p id="array_values"></p>
+    <p id="product_values"></p>
+    <script>
+        var numbers = [25, 56, 43, 787, 98]
+        function myFunction(num) {
+            return num * 10
+        }
+        var newArray = numbers.map(myFunction)
+        document.getElementById("array_values").innerHTML = "Original Array values: " + numbers
+        document.getElementById("product_values").innerHTML = "Values after Modification: " + newArray
+    </script>
+</body>
+
+</html>

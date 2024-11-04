@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <style>
+        body {
+
+            text-align: center;
+
+        }
+    </style>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <h1>Click here to get 50 points</h1>
+
+    <button title="start" onClick="Will()" type="button"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCNul08bAlOiP_Fx5_iWQ8MDwXZiZ1aBIOhqMvdAZyDjZz55-ywDbeWXX6QRxWzTRIOf0&usqp=CAU"
+            alt=""></button>
+
+    <p id="number"></p>
+
+    <script>
+        function Will() {
+            var i = 0;
+            var result = "";
+            do {
+                result = result + i + " , ";
+                i++;
+            }
+            while (i <= 50);
+            document.getElementById("number").innerHTML = result;
+        }
+    </script>
+
+</body>
+
+</html>

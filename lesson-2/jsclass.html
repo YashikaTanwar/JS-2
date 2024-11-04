@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Class</title>
+</head>
+
+<body style="background-color: palegoldenrod;">
+    <h2>Javascript Classes</h2>
+    <p>How to use a Javascript class</p>
+    <p id="student1"></p>
+    <p id="student2"></p>
+    <script>
+        class Student {
+            constructor(name, year) {
+                this.name = name;
+                this.year = year;
+            }
+            age() {
+                let date = new Date();
+                return date.getFullYear() - this.year;
+            }
+        }
+
+        let student1 = new Student("Riya", 2014);
+        document.getElementById("student1").innerHTML =
+            "My name is " + student1.name + ". I was born in " + student1.year + ", and my age is " + student1.age() + ".";
+
+        let student2 = new Student("Tina", 2018);
+        document.getElementById("student2").innerHTML =
+            "My name is " + student2.name + ". I was born in " + student2.year + ", and my age is " + student2.age() + ".";
+    </script>
+</body>
+
+</html>
+<!-- A class defines the structure of objects.It serves as a blueprint or template. -->
+<!-- objects have properties (like a book has a title, author, and pages) -->
+<!-- A method is a function that is a property of an object -->
+<!-- Objects are useful for Organizing data: Instead of having separate variables for each piece of data (like carMake, carModel, etc.), you can group them together in a single object. -->
